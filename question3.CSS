@@ -1,0 +1,50 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .Gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .Gallery {
+    position: relative;
+    width: 300px;
+    margin: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px brown;
+  }
+  
+  .Gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .Gallery.caption {
+    position: absolute;
+    top: 50%;
+    right: 20PX;
+    transform: translate(-50%, -50%);
+    color:brown;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .Gallery:hover img {
+    transform: scale(1.1);
+  }
+  
+  .Gallery:hover .caption {
+    opacity: 1;
+  }
+  
